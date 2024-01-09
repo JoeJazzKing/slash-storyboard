@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>slash-common</artifactId>
+        <groupId>com.heycine.slash.common</groupId>
+        <version>1.0.1</version>
+    </parent>
+    <packaging>pom</packaging>
+
+    <groupId>com.heycine.slash.storyboard</groupId>
+    <artifactId>slash-storyboard</artifactId>
+    <version>1.0.0</version>
+    <name>slash-storyboard</name>
+
+    <properties>
+        <heycine-common.version>1.0.1</heycine-common.version>
+
+        <scm.url>https://gitee.com/xxx/xxx.git</scm.url>
+    </properties>
+
+    <!-- 版本号管理 scm 配置 -->
+    <scm>
+        <connection>scm:git:${scm.url}</connection>
+        <developerConnection>scm:git:${scm.url}</developerConnection>
+        <tag>test</tag>
+    </scm>
+
+    <!--镜像管理-->
+    <repositories>
+        <repository>
+            <id>aliyun-public</id>
+            <name>阿里云仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <repository>
+            <id>heycine-public</id>
+            <name>私服仓库</name>
+            <url>http://localhost:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>storyboard-base</module>
+        <module>storyboard-web</module>
+    </modules>
+</project>

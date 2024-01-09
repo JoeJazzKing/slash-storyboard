@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>storyboard-web</artifactId>
+        <groupId>com.heycine.slash.storyboard</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>storyboard-manager</artifactId>
+    <name>storyboard-manager</name>
+
+    <dependencies>
+        <!-- business模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.storyboard</groupId>
+            <artifactId>storyboard-business</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <!-- file-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>file-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+        <!-- redis-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>redis-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+        <!-- mongo-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>mongo-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+        <!-- rocketmq-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+        <!-- swagger-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+        <!-- monitor-spring-boot-starter模块 -->
+        <dependency>
+            <groupId>com.heycine.slash.common</groupId>
+            <artifactId>monitor-spring-boot-starter</artifactId>
+            <version>${heycine-common.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+    </build>
+</project>
